@@ -1,0 +1,15 @@
+.products {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.product-title{
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+@media screen and (max-width: 834px) {
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

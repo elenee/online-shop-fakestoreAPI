@@ -1,0 +1,37 @@
+.tool-bar {
+  background-color: white;
+  color: #222f3e;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 57px;
+  border-bottom: solid rgba(36, 35, 35, 0.1) 2px;;
+}
+.nav-links ul {
+  display: flex;
+}
+.nav-links ul li {
+  color: #222f3e;
+  font-weight: 400;
+  font-size: 18px;
+  list-style: none;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.nav-links ul li:hover{
+  font-size: 20px;
+}
+.title{
+  font-weight: 500;
+}
+@media screen and (max-width: 834px) {
+  .tool-bar{
+    justify-content: space-between;
+  }
+  .nav-links{
+    display: none;
+  }
+}

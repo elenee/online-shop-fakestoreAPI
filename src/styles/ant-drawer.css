@@ -1,0 +1,33 @@
+.ant-drawer-content-wrapper {
+  width: 280px !important;
+}
+.ant-drawer-body {
+  padding: 0 !important;
+}
+.ant-drawer-body ul li {
+  list-style: none;
+  padding: 1rem 2rem;
+  border-bottom: solid rgba(36, 35, 35, 0.1) 1px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.ant-drawer-body ul li:hover {
+  background-color: #222f3e;
+  color: white;
+  transition: 0.3s linear;
+}
+.ant-drawer {
+  display: none;
+}
+.drawerButton {
+  display: none;
+}
+@media screen and (max-width: 834px) {
+  .drawerButton {
+    display: block;
+  }
+  .ant-drawer {
+    display: block;
+  }
+}

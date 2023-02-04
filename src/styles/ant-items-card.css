@@ -1,0 +1,32 @@
+.item-ant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px;
+}
+.item-ant .ant-card-cover {
+  padding: 10px;
+}
+.item-ant .ant-card-cover img {
+  height: 180px;
+}
+.item-ant .ant-card-body {
+  padding: 5px;
+}
+.item-ant .ant-card-meta-title {
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+  padding: 10px 10px 10px;
+  font-size: 14px;
+}
+.item-ant .ant-card-actions li {
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
