@@ -5,6 +5,8 @@
   flex-direction: column;
   cursor: pointer;
   margin: 20px;
+  width: 300px;
+  height: 340px;
 }
 .item-ant .ant-card-cover {
   padding: 10px;
@@ -20,7 +22,7 @@
   word-wrap: break-word;
   word-break: break-all;
   white-space: normal;
-  padding: 10px 10px 10px;
+  padding: 10px;
   font-size: 14px;
 }
 .item-ant .ant-card-actions li {

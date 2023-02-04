@@ -2,8 +2,8 @@
   width: 100%;
   height: 500px;
 }
-@media screen and (max-width: 834px) {
-    .cover{
-        height: 300px;
-    }
+@media screen and (max-width: 1150px) {
+  .cover {
+    height: 400px;
+  }
 }

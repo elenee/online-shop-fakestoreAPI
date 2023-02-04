@@ -1,5 +1,4 @@
 import { Card } from "antd";
-import "./CategoryCard.css";
 import "../../styles/ant-card1.css";
 
 const { Meta } = Card;

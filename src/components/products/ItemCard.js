@@ -6,10 +6,6 @@ const ItemCard = ({ data, index }) => (
   <Card
     className="item-ant"
     hoverable
-    style={{
-      width: 300,
-      height: 340,
-    }}
     cover={<img key={index} src={data.image} />}
     actions={[
       `${data.price}$`

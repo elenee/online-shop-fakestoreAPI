@@ -1,5 +1,5 @@
 .ant-card-cover img{
-  height: 200px;
+  height: 165px;
 }
 .category-ant .ant-card-body{
   display: flex;
@@ -7,15 +7,25 @@
   justify-content: center;
 }
 .category-ant{
-  width: 240px;
+  width: 230px;
+  height: 230p;
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1150px) {
   .category-ant .ant-card-cover img{
     height: 100px;
+    width: 150px;
   }
   .category-ant{
     margin-bottom: 20px;
     height: 100px;
+    width: 100%;
     display: flex;
+  }
+  .category-ant .ant-card-meta-title{
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    font-size: 15px;
   }
 }
