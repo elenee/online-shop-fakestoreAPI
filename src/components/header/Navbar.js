@@ -10,7 +10,7 @@ const Navbar = () => {
       <HeaderDrawer />
       <div className='nav-links'>
         <ul>
-          <NavLink to="/" className='li'>Home</NavLink>
+          <NavLink to="/online-shop-fakestoreAPI" className='li'>Home</NavLink>
         </ul>
       </div>
     </div>

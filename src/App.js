@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Suspense fallback={<div className="container">Loading...</div>}>
         <Routes>
-          <Route path="/" element={<Home setSelectedCategory={setSelectedCategory}/>} />
+          <Route path="/online-shop-fakestoreAPI" element={<Home setSelectedCategory={setSelectedCategory}/>} />
           <Route path={`/${selectedCategory}`} element={<Products selectedCategory={selectedCategory}/>}/>
         </Routes>
       </Suspense>
