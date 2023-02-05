@@ -7,7 +7,7 @@ import man from "../../images/man.jpg";
 import ring from "../../images/jew.jpg";
 import woman from "../../images/girl.jpg";
 
-const Category = () => {
+const Category = ({setSelectedCategory}) => {
   const [productCategory, setProductCategory] = useState([]);
   const categoryIcons = [iPhone, ring, man, woman];
 
@@ -17,6 +17,11 @@ const Category = () => {
       .then((result) => setProductCategory(result.data))
       .catch((err) => console.log("err"));
   }, []);
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <section className="category-section">
       <div className="categories container">
@@ -26,6 +31,7 @@ const Category = () => {
             data={product}
             categoryIcons={categoryIcons}
             index={index}
+            onClick={() => handleCategorySelect(product)}
           />
         )}
       </div>

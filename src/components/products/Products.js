@@ -3,15 +3,19 @@ import React, { useEffect, useState } from "react";
 import ItemCard from "./ItemCard";
 import './Products.css';
 
-const Products = () => {
+const Products = ({selectedCategory}) => {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
+    let url = "https://fakestoreapi.com/products";
+    if (selectedCategory) {
+      url += `/category/${selectedCategory}`;
+    }
     axios
-      .get("https://fakestoreapi.com/products")
+      .get(url)
       .then((result) => setAllProducts(result.data))
       .catch((err) => console.log("err"));
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <section className="alldata-section">
