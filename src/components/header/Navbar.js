@@ -6,7 +6,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="tool-bar">
-      <div className='title'>ECCOM</div>
+      <div className='title'>STORE</div>
       <HeaderDrawer />
       <div className='nav-links'>
         <ul>
