@@ -1,19 +1,22 @@
-import { useState } from 'react';
-import './App.css';
-import Category from './components/categories/Category';
-import Cover from './components/cover/Cover';
-import Header from './components/header/Header';
-import Products from './components/products/Products';
-import './styles/ant-drawer.css'
+import { Route, Routes } from "react-router-dom";
+import React, { useState } from 'react'
+import "./App.css";
+import { Suspense } from 'react';
+import Navbar from "./components/header/Navbar";
+import Home from "./pages/Home";
+import Products from "./components/products/Products";
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState(null);
   return (
     <div className="App">
-      <Header />
-      <Cover />
-      <Category setSelectedCategory={setSelectedCategory}/>
-      <Products selectedCategory={selectedCategory}/>
+      <Navbar />
+      <Suspense fallback={<div className="container">Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home setSelectedCategory={setSelectedCategory}/>} />
+          <Route path={`/${selectedCategory}`} element={<Products selectedCategory={selectedCategory}/>}/>
+        </Routes>
+      </Suspense>
     </div>
   );
 }

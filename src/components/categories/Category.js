@@ -6,6 +6,7 @@ import iPhone from "../../images/iPhone.jpg";
 import man from "../../images/man.jpg";
 import ring from "../../images/jew.jpg";
 import woman from "../../images/girl.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Category = ({setSelectedCategory}) => {
   const [productCategory, setProductCategory] = useState([]);
@@ -18,12 +19,14 @@ const Category = ({setSelectedCategory}) => {
       .catch((err) => console.log("err"));
   }, []);
 
+  const navigate = useNavigate()
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
+    navigate(`/${category}`);
   };
 
   return (
-    <section className="category-section">
+    <section className="category-section" id="home">
       <div className="categories container">
         {productCategory.map((product, index) => 
           <CategoryCard

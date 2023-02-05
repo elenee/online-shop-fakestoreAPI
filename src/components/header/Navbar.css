@@ -12,22 +12,25 @@
 .nav-links ul {
   display: flex;
 }
-.nav-links ul li {
+.nav-links ul .li{
+  text-decoration: none;
   color: #222f3e;
-  font-weight: 400;
+}
+.nav-links ul .li {
+  font-weight: 600;
   font-size: 18px;
   list-style: none;
   padding: 1rem 2rem;
   transition: 0.5s;
   cursor: pointer;
 }
-.nav-links ul li:hover{
+.nav-links ul .li:hover{
   font-size: 20px;
 }
 .title{
   font-weight: 500;
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1150px) {
   .tool-bar{
     justify-content: space-between;
   }

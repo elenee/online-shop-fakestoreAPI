@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import HeaderDrawer from "../drawer/HeaderDrawer";
-import "./Header.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -9,10 +10,7 @@ const Navbar = () => {
       <HeaderDrawer />
       <div className='nav-links'>
         <ul>
-          <li>Home</li>
-          <li>Items</li>
-          <li>Contact</li>
-          <li>Pay</li>
+          <NavLink to="/" className='li'>Home</NavLink>
         </ul>
       </div>
     </div>
