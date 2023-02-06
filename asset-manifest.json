@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-shop-fakestoreAPI/static/css/main.7590f618.css",
-    "main.js": "/online-shop-fakestoreAPI/static/js/main.b9f17cc7.js",
+    "main.css": "/online-shop-fakestoreAPI/static/css/main.c6ff7c5b.css",
+    "main.js": "/online-shop-fakestoreAPI/static/js/main.7ae639f4.js",
     "static/js/787.387f493e.chunk.js": "/online-shop-fakestoreAPI/static/js/787.387f493e.chunk.js",
     "static/media/cover1.jpg": "/online-shop-fakestoreAPI/static/media/cover1.6b7765d3dc607e858e58.jpg",
     "static/media/iPhone.jpg": "/online-shop-fakestoreAPI/static/media/iPhone.df5e583f8b91a4db4ab0.jpg",
@@ -9,12 +9,12 @@
     "static/media/jew.jpg": "/online-shop-fakestoreAPI/static/media/jew.8cc3d69afe8f633cac81.jpg",
     "static/media/man.jpg": "/online-shop-fakestoreAPI/static/media/man.207a750ce0bff78e4560.jpg",
     "index.html": "/online-shop-fakestoreAPI/index.html",
-    "main.7590f618.css.map": "/online-shop-fakestoreAPI/static/css/main.7590f618.css.map",
-    "main.b9f17cc7.js.map": "/online-shop-fakestoreAPI/static/js/main.b9f17cc7.js.map",
+    "main.c6ff7c5b.css.map": "/online-shop-fakestoreAPI/static/css/main.c6ff7c5b.css.map",
+    "main.7ae639f4.js.map": "/online-shop-fakestoreAPI/static/js/main.7ae639f4.js.map",
     "787.387f493e.chunk.js.map": "/online-shop-fakestoreAPI/static/js/787.387f493e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7590f618.css",
-    "static/js/main.b9f17cc7.js"
+    "static/css/main.c6ff7c5b.css",
+    "static/js/main.7ae639f4.js"
   ]
 }
