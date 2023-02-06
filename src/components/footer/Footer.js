@@ -13,18 +13,11 @@ const Footer = () => {
           </p>
         </div>
         <div className="box">
-          <h2>Recent Post</h2>
-          <div className="text">
-            <p>Leclerc frustrated over Ferrari 'changing' team orders decision</p>
-            <span>13 Nov 2022</span>
-          </div>
-        </div>
-        <div className="box">
           <h2>Get In Touch</h2>
           <p>Mail: <span>elenechikviladzewrk@gmail.com</span></p>
         </div>
       </div>
-      <div className="container legal">
+      <div className="container1 legal">
         <label>
           Design and developed by <span>Elene Chikviladze</span>
         </label>
