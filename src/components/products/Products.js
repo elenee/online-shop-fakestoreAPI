@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ItemModal from "../item-modal/ItemModal";
 import ItemCard from "./ItemCard";
 import "./Products.css";
 
@@ -31,7 +32,7 @@ const Products = ({ selectedCategory }) => {
       </div>
       <div className="products container">
         {allProducts.map((list, index) => (
-          <ItemCard data={list} index={index} key={index} />
+          <ItemModal data={list} index={index} key={index} />
         ))}
       </div>
     </section>
